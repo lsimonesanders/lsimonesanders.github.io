@@ -384,7 +384,28 @@ main {
 }
 
 /* --- Responsive --- */
-@media (max-width: 600px) {
+
+@media (min-width: 600px) {
+
+/* --- Navigation -- */
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+
+/* --- Main --- */	
   .section-blush, .section-pink, .section-coral{
 	padding: 2rem; 
   }
