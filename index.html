@@ -12,9 +12,11 @@
 <body>
   <nav class="nav">
     <span class="nav-name"><a href="index.html">L. Simone Sanders</a></span>
-    <!--<ul class="nav-links">
-      <li><a href="Work.html">Work</a></li>
-    </ul>-->
+    <button class="nav-menu" aria-label="Menu">&#9776;</button>
+	<ul class="nav-links">
+      <li><a href="case-studies.html">Case Studies</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 <main>
 <div class="section-blush">
@@ -102,6 +104,13 @@
 	<div class="column"><h1>L. Simone Sanders</h1><h3>(c) 2026</h3></div>
 </footer>
 <script>
+	//navigation menu
+const toggle = document.querySelector('.nav-menu');
+const links = document.querySelector('.nav-links');
+toggle.addEventListener('click', () => {
+  links.classList.toggle('open');
+});
+	
   // staircase animation
   const tiles = document.querySelectorAll('.tile');
 
