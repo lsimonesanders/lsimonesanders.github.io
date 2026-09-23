@@ -385,10 +385,9 @@ main {
 
 /* --- Responsive --- */
 
-@media (min-width: 600px) {
-
 /* --- Navigation -- */
-  .nav-menu {
+@media (min-width: 601px) {
+.nav-menu {
     display: none;
   }
 
@@ -404,8 +403,10 @@ main {
     font-size: 1.25rem;
     padding: 0;
   }
+}
 
 /* --- Main --- */	
+@media (max-width: 600px) {	
   .section-blush, .section-pink, .section-coral{
 	padding: 2rem; 
   }
@@ -429,8 +430,10 @@ main {
   .button {
     width: 80%;
   }
+}
 
 /* --- Home Intro --- */
+ @media (max-width: 600px) {
   .tile {
     font-size: 1.75rem;
     width: 90%;
@@ -446,8 +449,10 @@ main {
   .staircase {
     margin-left: 0;
   }
+ }
 
 /* --- Home Tagline --- */
+@media (max-width: 600px) {
   .tagline-line {
     display: block;
     font-family: "Raleway", sans-serif;
@@ -459,13 +464,15 @@ main {
     transform: scale(0.85);
     transition: transform 0.25s ease, opacity 0.25s ease;
   }
-
+}
 /* --- Columns --- */
+@media (max-width: 600px) {
   .column-container {
     flex-direction: column;
   }
-
+}
 /* --- Footer --- */
+@media (max-width: 600px) {
   footer {
     padding: 3rem 2rem 1rem 2rem;
   }
@@ -475,6 +482,4 @@ main {
     padding-bottom: 0.5rem;
     font-size: 1.5rem;
   }
-
-
 }
